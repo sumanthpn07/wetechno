@@ -37,6 +37,7 @@
     </nav>
 
     <!-- home section start -->
+  
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -47,6 +48,8 @@
             </div>
         </div>
     </section>
+    
+    
 
     <!-- about section start -->
     <section class="about" id="about">
@@ -236,10 +239,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message us</div>
-                    <form action="mailto:sumanthpn07@gmail.com"
-                    method="POST"
-                    enctype="multipart/form-data"
-                    name="EmailForm">
+                    <form action="POST" data-netlify="true">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
@@ -254,9 +254,11 @@
                         <div class="field textarea">
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
+                        
                         <div class="button-area">
                             <button type="submit" value="submit">Send message</button>
                         </div>
+                     
                     </form>
                 </div>
             </div>
